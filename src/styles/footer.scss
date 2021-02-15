@@ -1,0 +1,218 @@
+footer{
+    margin-top: 60px;
+    padding-top: 52px;
+    background-color: $light-grey;
+    color: #6E7482;
+    .subscribe-form{
+        width: 79%;
+    }
+    .contact-info{
+        width: 72%;
+        margin-left: auto;
+        div{
+            margin: 9px 0;
+        }
+    }
+    h5{
+        margin-bottom: 6px
+    }
+    p{
+        margin-bottom: 7px;
+        font-size:14px;
+        color:#9C9C9C;
+    }
+    a{
+        display: inline-block;
+        color: #6E7482;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.933333px;
+        &:hover{
+            color:$black;
+            text-decoration: none;
+        }
+    }
+    .sub-footer{
+        margin-top: 30px;
+        padding-top: 14px;
+        padding-bottom: 10px;
+        background-color: rgba(226, 228, 233, .2);
+        p{
+            margin: 0;
+            font-size: 12px;
+            line-height: 28px;
+            color: #9C9C9C;
+        }
+    }
+}
+.footer-navigation{
+    padding-left: 46px;
+}
+.footer-menu{
+    list-style:none;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.933333px;
+    padding: 0;
+    margin: 0;
+}
+.sub-footer-menu{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    a{
+        display: inline-block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 10px;
+        line-height: 28px;
+        color: #9C9C9C;
+        &+a{
+            &::before{
+                content:'|';
+                padding: 0 15px;
+                color:#9C9C9C;
+            }
+        }
+        &:hover{
+            color:$black;
+        }
+    }
+}
+.subscribe-form{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    margin-bottom:35px;
+    [type=submit]{
+        position: absolute;
+        right:0;
+        top: 0;
+        width:auto;
+        padding: 0 18px;
+    }
+    .input-group{
+        position: relative;
+        width: 100%;
+    }
+}
+input[type=email]{
+    width: 100%;
+    border:1px solid #E2E4E9;
+    background: #FFFFFF;
+    height: 50px;
+    padding: 0 18px;
+    font-size: 16px;
+    &::placeholder{
+        color:#A0A19F;
+    }
+}
+.social-list{
+    a{
+        display: inline-block;
+        text-decoration:none;
+        object{
+            cursor: pointer;
+            object-fit: fill;
+            svg{
+                cursor: pointer;
+            }
+        }
+        &+a{
+            margin-left: 30px;
+        }
+    }
+}
+@media screen and(max-width:1199px){
+  footer{
+    .contact-info{
+      width: 80%;
+    }
+  }
+}
+@media screen and(max-width:1023px){
+    footer{
+        padding-top: 49px;
+        margin-top: 109px;
+        h5{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .subscribe-form{
+            margin-top: 25px;
+            width:100%;
+        }
+        .contact-info{
+            margin-left: 10px;
+            div{
+                margin: 12px 0;
+            }
+        }
+        .sub-footer{
+            margin-top: 47px;
+            padding-top: 19px;
+            padding-bottom: 19px;
+        }
+        .sub-footer-menu{
+            a{
+                font-size: 12px;
+                &+a{
+                    &::before{
+                        padding: 0 18px;
+                    }
+                }
+            }
+        }
+    }
+    .social-list{
+        a{
+            &+a{
+                margin-left:65px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:660px){
+    footer{
+        position: relative;
+        padding-top: 51px;
+        h5{
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 22px;
+            padding: 0px 35px;
+        }
+        .subscribe-form{
+            margin-top: 9px;
+            margin-bottom: 40px;
+        }
+        .social-list{
+            position: absolute;
+            bottom: -213px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            a{
+                &+a{
+                    margin-left: 50px;
+                }
+            }
+        }
+        .contact-info{
+            width:100%;
+            margin-left:0;
+            div{
+                margin: 10px 0;
+            }
+        }
+        .sub-footer{
+            margin-top: 109px;
+        }
+    }
+}

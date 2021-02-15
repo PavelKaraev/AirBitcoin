@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>AirBitcon</title>
+  </head>
+  <body>
+    <!-- header -->
+    //=./templates/header.html
+    <!-- header end -->
+    <main class="content">
+        <header>
+            <h1>Новый депозит</h1>
+        </header>
+        <form class="deposit">
+            <div class="plan">
+                <h2>План</h2>
+                <div class="plans">
+                    <input type="radio" class="plan-radio" id="day" name="plan" value="15%">
+                    <div class="plan-item blue">
+                        <div class="plan-percent">15%</div>
+                        <div class="plan-info">
+                            <h4>ЕЖЕДНЕВНЫЙ НАВСЕГДА</h4>
+                            <ul>
+                                <li>Минимальный депозит:
+                                    <div>0.01 LTC</div>
+                                </li>
+                                <li>Максимальный депозит:
+                                    <div>5000 LTC</div>
+                                </li>
+                            </ul>
+                            <label for="day">ВЫБРАТЬ</label>
+                        </div>
+                    </div>
+                    <input type="radio" class="plan-radio" id="thirty-days" name="plan" value="900%">
+                    <div class="plan-item yellow">
+                        <div class="plan-percent">900%</div>
+                        <div class="plan-info">
+                            <h4>ЧЕРЕЗ 30 ДНЕЙ!</h4>
+                            <ul>
+                                <li>Минимальный депозит:
+                                    <div>0.01 LTC</div>
+                                </li>
+                                <li>Максимальный депозит:
+                                    <div>5000 LTC</div>
+                                </li>
+                            </ul>
+                            <label for="thirty-days">ВЫБРАТЬ</label>
+                        </div>
+                    </div>
+                    <input type="radio" class="plan-radio" id="sixty-days" name="plan" value="2400%">
+                    <div class="plan-item orange">
+                        <div class="plan-percent">2400%</div>
+                        <div class="plan-info">
+                            <h4>ЧЕРЕЗ 60 ДНЕЙ!!</h4>
+                            <ul>
+                                <li>Минимальный депозит:
+                                    <div>0.01 LTC</div>
+                                </li>
+                                <li>Максимальный депозит:
+                                    <div>5000 LTC</div>
+                                </li>
+                            </ul>
+                            <label for="sixty-days">ВЫБРАТЬ</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="currency">
+                <h2>Валюта</h2>
+                <div class="currencies">
+                    <input type="radio" class="currency-radio" id="bitcoin" name="currency" value="Bitcoin">
+                    <label class="currency-label bitcoin" for="bitcoin">Bitcoin</label>
+                    <input type="radio" class="currency-radio" id="dogecoin" name="currency" value="Dogecoin">
+                    <label class="currency-label dogecoin" for="dogecoin">Dogecoin</label>
+                    <input type="radio" class="currency-radio" id="ripple" name="currency" value="Ripple">
+                    <label class="currency-label ripple" for="ripple">Ripple</label>
+                    <input type="radio" class="currency-radio" id="dash" name="currency" value="Dash">
+                    <label class="currency-label dash" for="dash">Dash</label>
+                    <input type="radio" class="currency-radio" id="ethereum" name="currency" value="Ethereum">
+                    <label class="currency-label ethereum" for="ethereum">Ethereum</label>
+                    <input type="radio" class="currency-radio" id="bitcoin-cash" name="currency" value="BitcoinCash">
+                    <label class="currency-label bitcoin-cash" for="bitcoin-cash">BitcoinCash</label>
+                </div>
+            </div>
+            <div class="sum">
+                <h2>Сумма</h2>
+                <input type="text" pattern="0-9" class="sum-input" name="sum-input">
+                <div class="sum-pattern">
+                    <input type="radio" class="sum-radio" id="100" name="sum" value="100">
+                    <label class="sum-label" for="100">100р</label>
+                    <input type="radio" class="sum-radio" id="1000" name="sum" value="1000">
+                    <label class="sum-label" for="1000">1000р</label>
+                    <input type="radio" class="sum-radio" id="10000" name="sum" value="10000">
+                    <label class="sum-label" for="10000">10000р</label>
+                    <input type="radio" class="sum-radio" id="100000" name="sum" value="100000">
+                    <label class="sum-label" for="100000">100000р</label>
+                </div>
+            </div>
+            <button type="submit" class="btn">Создать</button>
+        </form>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
+</html>

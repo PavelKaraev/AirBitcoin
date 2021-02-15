@@ -1,0 +1,9 @@
+// Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
+@import "variables";
+// Подключение нужных SCSS исходников Bootstrap 4
+@import "../../node_modules/normalize.css/normalize.css";
+// Подключение своих SCSS файлов
+@import "fonts";
+@import "styles";
+@import "header";
+@import "pagination";
